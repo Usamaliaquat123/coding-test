@@ -41,7 +41,7 @@ export default function PropertyNotFound() {
             Property Not Found
           </h1>
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
-            We couldn't find the property you're looking for. It might have been
+            We couldnt find the property youre looking for. It might have been
             removed, sold, or the link may be incorrect.
           </p>
 

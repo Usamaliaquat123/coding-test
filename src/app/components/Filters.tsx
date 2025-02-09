@@ -6,15 +6,7 @@ import { properties } from "../../../lib/data";
 type PropertyType = "Apartment" | "Villa" | "Townhouse" | "Penthouse";
 type ListingType = "Rent" | "Buy";
 
-interface PropertySearchProps {
-  onFilterChange: Function;
-  onSortChange: Function;
-}
-
-export const PropertySearch: React.FC<PropertySearchProps> = ({
-  onFilterChange,
-  onSortChange,
-}) => {
+export const PropertySearch: React.FC = () => {
   const [selectedListing, setSelectedListing] = useState<ListingType>("Rent");
   const [showPropertyTypes, setShowPropertyTypes] = useState(false);
   const [showBedsBaths, setShowBedsBaths] = useState(false);
@@ -30,11 +22,6 @@ export const PropertySearch: React.FC<PropertySearchProps> = ({
     "Penthouse",
   ];
   const recentLocations = properties;
-
-  const handleTabChange = (type: ListingType) => {
-    setSelectedListing(type);
-    // onTabChange?.(type);
-  };
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4">

@@ -7,43 +7,7 @@ import { Properties, Property } from "../../types/property";
 import { properties } from "../../lib/data";
 
 export default function HomePage() {
-  const [filteredProperties, setFilteredProperties] =
-    useState<Properties>(properties);
-
-  const handleFilterChange = (filters: {
-    bedrooms: number;
-    priceRange: number;
-  }) => {
-    let filtered = properties;
-
-    if (filters.bedrooms > 0) {
-      filtered = filtered.filter((p) => p.bedroom >= filters.bedrooms);
-    }
-
-    if (filters.priceRange > 0) {
-      filtered = filtered.filter((p) => p.price >= filters.priceRange);
-    }
-
-    setFilteredProperties(filtered);
-  };
-
-  const handleSortChange = (sort: string) => {
-    const sorted = [...filteredProperties].sort((a, b) => {
-      switch (sort) {
-        case "price-asc":
-          return a.price - b.price;
-        case "price-desc":
-          return b.price - a.price;
-        case "recent":
-          return b.createdAt.getTime() - a.createdAt.getTime();
-        case "name":
-          return a.property.localeCompare(b.property);
-        default:
-          return 0;
-      }
-    });
-    setFilteredProperties(sorted);
-  };
+  const [filteredProperties] = useState<Properties>(properties);
 
   return (
     <main className="  bg-[#F7F7FC]">
@@ -64,10 +28,7 @@ export default function HomePage() {
             <div className="mt-10">
               {/* Filters Section */}
               <div className="mt-16">
-                <PropertySearch
-                  onFilterChange={handleFilterChange}
-                  onSortChange={handleSortChange}
-                />
+                <PropertySearch />
               </div>
             </div>
           </div>

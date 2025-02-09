@@ -1,4 +1,4 @@
-import { Properties, Property } from '../types/property';
+import { Properties } from '../types/property';
 import mockData from './mock.json';
 
 export const properties: Properties = mockData.map((property, index) => ({

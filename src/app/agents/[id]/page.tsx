@@ -17,52 +17,17 @@ import {
 } from "lucide-react";
 import { handleContact } from "@/app/utils";
 import { properties } from "../../../../lib/data";
-import { Agent, Property } from "../../../../types/property";
+import { Agent } from "../../../../types/property";
 
-interface AgentStats {
-  propertiesSold: number;
-  propertiesRented: number;
-  totalDeals: number;
-  experience: number;
-  rating: number;
-  reviews: number;
-}
-
-interface AgentProperty {
-  id: string;
-  title: string;
-  location: string;
-  price: number;
-  type: "sale" | "rent";
-  image: string;
-}
-
-interface AgentProfileProps {
-  name: string;
-  image: string;
-  title: string;
-  phone: string;
-  email: string;
-  description: string;
-  languages: string[];
-  specialization: string[];
-  verified: boolean;
-  stats: AgentStats;
-  recentProperties: AgentProperty[];
-}
-
-export default function AgentProfile({ params }: { params: { id: string } }) {
+export default function AgentProfile() {
   const {
     email,
-    id,
     image,
     languages,
     name,
     description,
     phone,
-    recentProperties,
     specialization,
-    superAgent,
     verified,
     stats,
   }: Agent | undefined = properties[0].agent;
@@ -229,7 +194,7 @@ export default function AgentProfile({ params }: { params: { id: string } }) {
               </button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {recentProperties.map((property) => (
+              {/* {recentProperties.map((property) => (
                 <div
                   key={property.id}
                   className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow"
@@ -270,7 +235,7 @@ export default function AgentProfile({ params }: { params: { id: string } }) {
                     </div>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

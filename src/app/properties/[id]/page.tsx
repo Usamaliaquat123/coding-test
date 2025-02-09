@@ -1,6 +1,4 @@
 "use client";
-import { notFound } from "next/navigation";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { properties } from "../../../../lib/data";
 import {
@@ -35,7 +33,7 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="relative h-[70vh] w-full bg-black">
-        <Image
+        <img
           src={property.image}
           alt={property.property}
           fill
@@ -172,7 +170,7 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
               <div className="sticky top-4 bg-white rounded-xl border p-6">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="relative">
-                    <Image
+                    <img
                       src={property.agent.image}
                       alt={property.agent.name}
                       width={60}

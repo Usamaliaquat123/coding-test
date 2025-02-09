@@ -15,6 +15,7 @@ import { Property } from "../../../types/property";
 import moment from "moment";
 import Link from "next/link";
 import { handleEmail, handlePhoneCall, handleWhatsApp } from "../utils";
+import Image from "next/image";
 
 interface PropertyCardProps {
   data?: Property;
