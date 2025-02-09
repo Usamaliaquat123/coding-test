@@ -34,13 +34,12 @@ interface propertyAgent {
 }
 
 interface AgentStats {
-        propertiesSold?: number,
-        propertiesRented?: number,
-        totalDeals?: number,
-        experience?: number,
-        
-        rating?: number,
-        reviews?: number
+        propertiesSold: number,
+        propertiesRented: number,
+        totalDeals: number,
+        experience: number,
+        rating: number,
+        reviews: number
 }
 
 export interface Agent {
@@ -53,9 +52,9 @@ export interface Agent {
     email : string;
     languages: Array<string>,
     specialization: Array<string>
-    stats?: AgentStats,
+    stats: AgentStats,
     description: string;
-    recentProperties: Array<propertyAgent>
+    // recentProperties: Array<propertyAgent>
   }
 
 // Type for the array of properties

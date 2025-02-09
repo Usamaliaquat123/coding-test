@@ -155,15 +155,16 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Agent Info & Actions */}
         <div className="flex justify-between items-center pt-4 border-t border-gray-100">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-              <img
-                src={data.agent.image}
-                alt="agent"
-                className="w-10 h-10 object-cover"
-              />
-            </div>
+            <Link href={"/agents/2"}>
+              <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
+                <img
+                  src={data.agent.image}
+                  alt="agent"
+                  className="w-10 h-10 object-cover"
+                />
+              </div>
+            </Link>
           </div>
-          <div></div>
           <div className="text-sm text-gray-500 ml-2">
             Listed {moment(data.createdAt).fromNow()}
           </div>

@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import { Search, MapPin, ChevronDown } from "lucide-react";
+import { properties } from "../../../lib/data";
 
 // Types
 type PropertyType = "Apartment" | "Villa" | "Townhouse" | "Penthouse";
-type ListingType = "Rent" | "Buy" | "New projects" | "Commercial";
-
-interface Location {
-  name: string;
-  address: string;
-}
+type ListingType = "Rent" | "Buy";
 
 interface PropertySearchProps {
   onFilterChange: Function;
@@ -24,27 +20,16 @@ export const PropertySearch: React.FC<PropertySearchProps> = ({
   const [showBedsBaths, setShowBedsBaths] = useState(false);
   const [showLocations, setShowLocations] = useState(false);
   const [searchText, setSearchText] = useState("");
-
-  const listingTypes: ListingType[] = [
-    "Rent",
-    "Buy",
-    "New projects",
-    "Commercial",
-  ];
+  const [beds, setBeds] = useState("");
+  const [baathrooms, setbaathrooms] = useState("");
+  const listingTypes: ListingType[] = ["Rent", "Buy"];
   const propertyTypes: PropertyType[] = [
     "Apartment",
     "Villa",
     "Townhouse",
     "Penthouse",
   ];
-  const recentLocations: Location[] = [
-    { name: "Ghalia", address: "Dubai, Jumeirah Village Circle, District 18" },
-    { name: "Elite Downtown Residence", address: "Dubai, Downtown Dubai" },
-    {
-      name: "Sydney Villas",
-      address: "Dubai, Jumeirah Village Circle, District 18",
-    },
-  ];
+  const recentLocations = properties;
 
   const handleTabChange = (type: ListingType) => {
     setSelectedListing(type);
@@ -91,15 +76,15 @@ export const PropertySearch: React.FC<PropertySearchProps> = ({
               <h3 className="text-gray-700 font-medium mb-3">
                 Recent locations
               </h3>
-              {recentLocations.map((location) => (
+              {recentLocations.splice(0, 3).map((location, key) => (
                 <div
-                  key={location.name}
+                  key={key}
                   className="flex items-start gap-2 py-2 cursor-pointer hover:bg-gray-50"
                 >
                   <MapPin className="w-5 h-5 text-gray-400 mt-1" />
                   <div>
                     <div className="font-medium text-gray-500">
-                      {location.name}
+                      {location.property}
                     </div>
                     <div className="text-sm text-gray-500">
                       {location.address}
@@ -159,26 +144,30 @@ export const PropertySearch: React.FC<PropertySearchProps> = ({
               <div className="mb-4">
                 <h3 className="text-gray-700 font-medium mb-2">Bedrooms</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Studio", "1", "2", "3", "4", "5", "6", "7", "7+"].map(
-                    (num) => (
-                      <button
-                        key={num}
-                        onClick={() => setShowBedsBaths(!showBedsBaths)}
-                        className="px-4 py-1 cursor-pointer rounded-full border text-gray-500 border-gray-500 text-sm hover:border-purple-600 hover:text-purple-600"
-                      >
-                        {num}
-                      </button>
-                    )
-                  )}
+                  {["Studio", "1", "2", "3", "4"].map((num) => (
+                    <button
+                      key={num}
+                      onClick={() => setBeds(num)}
+                      className={`${
+                        beds === num && "border-purple-600 text-purple-600"
+                      } px-4 py-1 cursor-pointer rounded-full border text-gray-500 border-gray-500 text-sm hover:border-purple-600 hover:text-purple-600`}
+                    >
+                      {num}
+                    </button>
+                  ))}
                 </div>
               </div>
               <div>
                 <h3 className="text-gray-700 font-medium mb-2">Bathrooms</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["1", "2", "3", "4", "5", "6", "7", "7+"].map((num) => (
+                  {["1", "2", "3", "4"].map((num) => (
                     <button
                       key={num}
-                      className="px-4 py-1 cursor-pointer rounded-full border text-gray-500 border-gray-text-gray-500 text-sm hover:border-purple-600 hover:text-purple-600"
+                      onClick={() => setbaathrooms(num)}
+                      className={`${
+                        baathrooms === num &&
+                        "border-purple-600 text-purple-600"
+                      } px-4 py-1 cursor-pointer rounded-full border text-gray-500 border-gray-text-gray-500 text-sm hover:border-purple-600 hover:text-purple-600`}
                     >
                       {num}
                     </button>
