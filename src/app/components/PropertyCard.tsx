@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import { Property } from "../../../types/property";
 import moment from "moment";
 import Link from "next/link";
+import { handleEmail, handlePhoneCall, handleWhatsApp } from "../utils";
 
 interface PropertyCardProps {
   data?: Property;
@@ -66,13 +67,13 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   if (!data) return null;
 
   return (
-    <Link href={`/properties/${data.id}`}>
-      <motion.div
-        className="cursor-pointer bg-white rounded-lg overflow-hidden shadow-lg"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3 }}
-      >
+    <motion.div
+      className="cursor-pointer bg-white rounded-lg overflow-hidden shadow-lg"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      <Link href={`/properties/${data.id}`}>
         <div className="relative">
           <div className="relative h-56">
             <img
@@ -112,81 +113,99 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
             </div>
           )}
         </div>
+      </Link>
+      <div className="p-4">
+        {/* Property Type & Price */}
+        <div className="flex justify-between items-start mb-2">
+          <span className="text-gray-600">
+            {data.type === "rent" ? "Apartment / Rent" : "Sale"}
+          </span>
+        </div>
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          {formatPrice(data.price)}
+        </h2>
 
-        <div className="p-4">
-          {/* Property Type & Price */}
-          <div className="flex justify-between items-start mb-2">
-            <span className="text-gray-600">
-              {data.type === "rent" ? "Apartment / Rent" : "Sale"}
-            </span>
+        {/* Features */}
+        <p className="text-gray-600 mb-4">
+          Spacious | Fully Furnished | Well Maintained
+        </p>
+
+        {/* Location */}
+        <div className="flex items-start gap-2 mb-4">
+          <MapPin className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
+          <span className="text-gray-600">{data.address}</span>
+        </div>
+
+        {/* Specs */}
+        <div className="flex gap-6 mb-4">
+          <div className="flex items-center gap-2">
+            <BedDouble className="w-5 h-5 text-gray-400" />
+            <span className="text-gray-600">{data.bedroom}</span>
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
-            {formatPrice(data.price)}
-          </h2>
-
-          {/* Features */}
-          <p className="text-gray-600 mb-4">
-            Spacious | Fully Furnished | Well Maintained
-          </p>
-
-          {/* Location */}
-          <div className="flex items-start gap-2 mb-4">
-            <MapPin className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-            <span className="text-gray-600">{data.address}</span>
+          <div className="flex items-center gap-2">
+            <Bath className="w-5 h-5 text-gray-400" />
+            <span className="text-gray-600">{data.washroom}</span>
           </div>
-
-          {/* Specs */}
-          <div className="flex gap-6 mb-4">
-            <div className="flex items-center gap-2">
-              <BedDouble className="w-5 h-5 text-gray-400" />
-              <span className="text-gray-600">{data.bedroom}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Bath className="w-5 h-5 text-gray-400" />
-              <span className="text-gray-600">{data.washroom}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Square className="w-5 h-5 text-gray-400" />
-              <span className="text-gray-600">1,127 sqft</span>
-            </div>
-          </div>
-
-          {/* Agent Info & Actions */}
-          <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
-                <img
-                  src={data.agent.image}
-                  alt="agent"
-                  className="w-10 h-10 object-cover"
-                />
-              </div>
-            </div>
-            <div></div>
-            <div className="text-sm text-gray-500 ml-2">
-              Listed {moment(data.createdAt).fromNow()}
-            </div>
-
-            <div className="flex gap-2">
-              <button className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors">
-                <Phone className="w-5 h-5" />
-              </button>
-              <button className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors">
-                <Mail className="w-5 h-5" />
-              </button>
-              <button className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors">
-                <MessageCircle className="w-5 h-5" />
-              </button>
-              <button className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors">
-                <Heart className="w-5 h-5" />
-              </button>
-              <button className="p-2 text-gray-400 hover:bg-gray-100 rounded-lg transition-colors">
-                <MoreVertical className="w-5 h-5" />
-              </button>
-            </div>
+          <div className="flex items-center gap-2">
+            <Square className="w-5 h-5 text-gray-400" />
+            <span className="text-gray-600">1,127 sqft</span>
           </div>
         </div>
-      </motion.div>
-    </Link>
+
+        {/* Agent Info & Actions */}
+        <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-gray-200 overflow-hidden">
+              <img
+                src={data.agent.image}
+                alt="agent"
+                className="w-10 h-10 object-cover"
+              />
+            </div>
+          </div>
+          <div></div>
+          <div className="text-sm text-gray-500 ml-2">
+            Listed {moment(data.createdAt).fromNow()}
+          </div>
+
+          <div className="flex gap-2">
+            <button
+              onClick={() => handlePhoneCall(data.agent.phone)}
+              className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() =>
+                handleEmail({
+                  email: data.agent.email,
+                  name: data.agent.name,
+                })
+              }
+              className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+            </button>
+            <button
+              onClick={() =>
+                handleWhatsApp({
+                  phone: data.agent.phone,
+                  name: data.agent.name,
+                })
+              }
+              className="p-2 text-indigo-700 hover:bg-indigo-50 rounded-lg transition-colors"
+            >
+              <MessageCircle className="w-5 h-5" />
+            </button>
+            <button className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors">
+              <Heart className="w-5 h-5" />
+            </button>
+            <button className="p-2 text-gray-400 hover:bg-gray-100 rounded-lg transition-colors">
+              <MoreVertical className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </motion.div>
   );
 };

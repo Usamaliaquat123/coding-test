@@ -1,200 +1,529 @@
 [
-    {
-        "property": "Virdis",
-        "developer": "Damac",
-        "community": "Damac Hills 2",
-        "bedroom": 2,
-        "washroom": 2,
-        "price": 250000,
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
-            "name" : "Usama",
-            "verified" : true,
-            "superAgent" : false
-        },
-        "premium" : true,
-        "type": "rent",
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
-        "address": "Damac Hills 2, Dubai Land, Dubai",
-        "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+  {
+    "property": "Virdis",
+    "developer": "Damac",
+    "community": "Damac Hills 2",
+    "bedroom": 2,
+    "washroom": 2,
+    "price": 250000,
+    "agent": {
+      "id": "90",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+      "name": "Usama",
+      "verified": true,
+      "superAgent": false,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-            "name" : "Tina",
-            "verified" : false,
-            "superAgent" : true
-        },
-        "property": "Marina Heights",
-        "developer": "Emaar",
-        "community": "Dubai Marina",
-        "bedroom": 3,
-        "premium" : false,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
-        "washroom": 3,
-        "price": 1800000,
-        "type": "sale",
-        "address": "Dubai Marina, Dubai",
-        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+    "premium": true,
+    "type": "rent",
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "address": "Damac Hills 2, Dubai Land, Dubai",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994"
+  },
+  {
+    "agent": {
+      "id": "28",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+      "name": "Tina",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
-            "name" : "Ayla",
-            "verified" : false,
-            "superAgent" : true
-        },
-        "premium" : true,
-        "property": "Palm Views",
-        "developer": "Nakheel",
-        "community": "Palm Jumeirah",
-        "bedroom": 4,
-        "washroom": 4,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
-        "price": 3500000,
-        "type": "sale",
-        "address": "Palm Jumeirah, Dubai",
-        "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227"
+    "property": "Marina Heights",
+    "developer": "Emaar",
+    "community": "Dubai Marina",
+    "bedroom": 3,
+    "premium": false,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "washroom": 3,
+    "price": 1800000,
+    "type": "sale",
+    "address": "Dubai Marina, Dubai",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+  },
+  {
+    "agent": {
+      "id": "78",
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      "name": "Ayla",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1619946794135-5bc917a27793?w=400&h=400&fit=crop",
-            "name" : "Yana",
-            "verified" : false,
-            "superAgent" : true
-        },
-        "property": "Creek Vista",
-        "developer": "Dubai Properties",
-        "community": "Dubai Creek Harbour",
-        "bedroom": 1,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "premium": true,
+    "property": "Palm Views",
+    "developer": "Nakheel",
+    "community": "Palm Jumeirah",
+    "bedroom": 4,
+    "washroom": 4,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "price": 3500000,
+    "type": "sale",
+    "address": "Palm Jumeirah, Dubai",
+    "image": "https://images.unsplash.com/photo-1613977257363-707ba9348227"
+  },
+  {
+    "agent": {
+      "id": "86",
+      "image": "https://images.unsplash.com/photo-1619946794135-5bc917a27793?w=400&h=400&fit=crop",
+      "name": "Yana",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
+    },
+    "property": "Creek Vista",
+    "developer": "Dubai Properties",
+    "community": "Dubai Creek Harbour",
+    "bedroom": 1,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "premium" : false,
-        "washroom": 1,
-        "price": 120000,
-        "type": "rent",
-        "address": "Dubai Creek Harbour, Dubai",
-        "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+    "premium": false,
+    "washroom": 1,
+    "price": 120000,
+    "type": "rent",
+    "address": "Dubai Creek Harbour, Dubai",
+    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+  },
+  {
+    "agent": {
+      "id": "87",
+      "image": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=400&h=400&fit=crop",
+      "name": "Jana",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=400&h=400&fit=crop",
-            "name" : "Jana",
-            "verified" : false,
-             "superAgent" : true
-        },
-        "property": "Bluewaters Residences",
-        "developer": "Meraas",
-        "community": "Bluewaters Island",
-        "bedroom": 3,
-        "premium" : false,
-        "washroom": 3.5,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "property": "Bluewaters Residences",
+    "developer": "Meraas",
+    "community": "Bluewaters Island",
+    "bedroom": 3,
+    "premium": false,
+    "washroom": 3.5,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "price": 2800000,
-        "type": "sale",
-        "address": "Bluewaters Island, Dubai",
-        "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+    "price": 2800000,
+    "type": "sale",
+    "address": "Bluewaters Island, Dubai",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+  },
+  {
+    "agent": {
+      "id": "88",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      "name": "Maha",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-            "name" : "Maha",
-            "verified" : false,
-             "superAgent" : true
-        },
-        "property": "Downtown Views",
-        "developer": "Emaar",
-        "community": "Downtown Dubai",
-        "bedroom": 2,
-        "premium" : true,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "property": "Downtown Views",
+    "developer": "Emaar",
+    "community": "Downtown Dubai",
+    "bedroom": 2,
+    "premium": true,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "washroom": 2,
-        "price": 180000,
-        "type": "rent",
-        "address": "Downtown Dubai, Dubai",
-        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    "washroom": 2,
+    "price": 180000,
+    "type": "rent",
+    "address": "Downtown Dubai, Dubai",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+  },
+  {
+    "agent": {
+      "id": "89",
+      "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      "name": "Yafa",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-            "name" : "Yafa",
-            "verified" : false,
-             "superAgent" : true
-        },
-        "property": "Arabian Ranches Villa",
-        "developer": "Emaar",
-        "community": "Arabian Ranches",
-        "bedroom": 5,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "property": "Arabian Ranches Villa",
+    "developer": "Emaar",
+    "community": "Arabian Ranches",
+    "bedroom": 5,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "washroom": 5,
-        "premium" : true,
-        "price": 4500000,
-        "type": "sale",
-        "address": "Arabian Ranches, Dubai",
-        "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+    "washroom": 5,
+    "premium": true,
+    "price": 4500000,
+    "type": "sale",
+    "address": "Arabian Ranches, Dubai",
+    "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
+  },
+  {
+    "agent": {
+      "id": "95",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      "name": "Mehar",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-            "name" : "Mehar",
-            "verified" : false,
-             "superAgent" : true
-        },
-        "property": "JLT Lakeside",
-        "developer": "DMCC",
-        "community": "Jumeirah Lake Towers",
-        "bedroom": 1,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "property": "JLT Lakeside",
+    "developer": "DMCC",
+    "community": "Jumeirah Lake Towers",
+    "bedroom": 1,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "premium" : false,
-        "washroom": 1.5,
-        "price": 95000,
-        "type": "rent",
-        "address": "Jumeirah Lake Towers, Dubai",
-        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+    "premium": false,
+    "washroom": 1.5,
+    "price": 95000,
+    "type": "rent",
+    "address": "Jumeirah Lake Towers, Dubai",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+  },
+  {
+    "agent": {
+      "id": "96",
+      "image": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=400&h=400&fit=crop",
+      "name": "Jane",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=400&h=400&fit=crop",
-            "name" : "Jane",
-            "verified" : false,
-            "superAgent" : true
-        },
-        "property": "Business Bay Executive",
-        "developer": "Dubai Properties",
-        "community": "Business Bay",
-        "bedroom": 2,
-        "premium" : true,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "property": "Business Bay Executive",
+    "developer": "Dubai Properties",
+    "community": "Business Bay",
+    "bedroom": 2,
+    "premium": true,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "washroom": 2,
-        "price": 1500000,
-        "type": "sale",
-        "address": "Business Bay, Dubai",
-        "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde"
+    "washroom": 2,
+    "price": 1500000,
+    "type": "sale",
+    "address": "Business Bay, Dubai",
+    "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde"
+  },
+  {
+    "agent": {
+      "id": "97",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      "name": "Merly",
+      "verified": false,
+      "superAgent": true,
+      "phone": "+971554406739",
+      "email": "agent@gmail.com",
+      "languages": ["English", "Arabic", "Chinese"],
+      "specialization": [
+        "Luxury Properties",
+        "Investment Advisory",
+        "Off-Plan"
+      ],
+      "stats": {
+        "propertiesSold": 150,
+        "propertiesRented": 200,
+        "totalDeals": 350,
+        "experience": 8,
+        "rating": 4.8,
+        "reviews": 180
+      },
+      "recentProperties": [
+        {
+          "id": "1",
+          "property": "Marina Heights",
+          "developer": "Emaar",
+          "community": "Dubai Marina",
+          "bedroom": 3,
+          "premium": false,
+          "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+          "washroom": 3,
+          "price": 1800000,
+          "type": "sale",
+          "address": "Dubai Marina, Dubai",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        }
+      ]
     },
-    {
-        "agent" : {
-            "image" : "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-            "name" : "Merly",
-            "verified" : false,
-             "superAgent" : true
-        },
-        
-        "property": "Hills Estate",
-        "developer": "Meraas",
-        "community": "Dubai Hills Estate",
-        "bedroom": 4,
-        "washroom": 4,
-        "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
 
-        "premium" : true,
-        "price": 320000,
-        "type": "rent",
-        "address": "Dubai Hills Estate, Dubai",
-        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-    }
+    "property": "Hills Estate",
+    "developer": "Meraas",
+    "community": "Dubai Hills Estate",
+    "bedroom": 4,
+    "washroom": 4,
+    "description": "Developed by Sobha Real Estate LLC, Coral Beach Villas is a gated residential community situated on the scenic Sobha Siniya Island near Umm Al Quwain. This project, which offers an unmatched level of luxury and comfort, is a component of the first phase of the broader Sobha Siniya Island development. A delivery date for the Coral Beach Villas project will shortly be revealed. The property is currently under construction.",
+    "premium": true,
+    "price": 320000,
+    "type": "rent",
+    "address": "Dubai Hills Estate, Dubai",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+  }
 ]

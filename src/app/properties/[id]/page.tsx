@@ -18,6 +18,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import PropertyNotFound from "@/app/components/NotFound";
+import { handleEmail, handlePhoneCall, handleWhatsApp } from "@/app/utils";
 
 export default function PropertyPage({ params }: { params: { id: string } }) {
   const property = properties.find((p) => p?.id === params?.id);
@@ -191,15 +192,34 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
                 </div>
 
                 <div className="space-y-3">
-                  <button className=" cursor-pointer w-full flex items-center justify-center gap-2 bg-primary text-white p-3 rounded-lg hover:bg-primary/90 transition-colors bg-red-500">
+                  <button
+                    onClick={() => handlePhoneCall(property.agent.phone)}
+                    className=" cursor-pointer w-full flex items-center justify-center gap-2 bg-primary text-white p-3 rounded-lg hover:bg-primary/90 transition-colors bg-red-500"
+                  >
                     <Phone className="w-5 h-5" />
                     Call
                   </button>
-                  <button className="hover:border-red-500 cursor-pointer w-full flex items-center justify-center gap-2 bg-white text-primary border-2 border-primary p-3 rounded-lg hover:bg-primary/5 transition-colors border-red-300">
+                  <button
+                    onClick={() =>
+                      handleEmail({
+                        email: property.agent.email,
+                        name: property.agent.name,
+                      })
+                    }
+                    className="hover:border-red-500 cursor-pointer w-full flex items-center justify-center gap-2 bg-white text-primary border-2 border-primary p-3 rounded-lg hover:bg-primary/5 transition-colors border-red-300"
+                  >
                     <Mail className="w-5 h-5 text-red-400" />
                     <p className="text-md text-red-400 font-bold">Email</p>
                   </button>
-                  <button className="cursor-pointer w-full flex items-center justify-center gap-2 bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors">
+                  <button
+                    onClick={() =>
+                      handleWhatsApp({
+                        phone: property.agent.phone,
+                        name: property.agent.name,
+                      })
+                    }
+                    className="cursor-pointer w-full flex items-center justify-center gap-2 bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors"
+                  >
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp
                   </button>
